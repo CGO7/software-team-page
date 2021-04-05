@@ -35,20 +35,70 @@ const managerQuestions = () => {
             choices: ['engineer', 'intern', 'No one to add'],
         },
 
-    ]);
+    ])
+    .then((answers) => {
+        if (answers.employeeType === 'engineer') {
+            const empQuestions = () => {
+                return inquirer.prompt([
+                    {
+                        type: 'input',
+                        message: 'What is employees name?',
+                        name: 'emp-name',
+                    },
+                    {
+                        type: 'input',
+                        message: 'What is his/her employee ID?',
+                        name: 'emp-id',
+                    },
+                    {
+                        type: 'input',
+                        message: 'What is his/her email address?',
+                        name: 'emp-address',
+                    },
+                    {
+                        type: 'input',
+                        message: "What is his/her GitHub username?",
+                        name: 'emp-github',
+                    },
+                ]);
+            };
+            empQuestions();
+        } if (answers.employeeType === 'intern') {
+            const empQuestions2 = () => {
+                return inquirer.prompt([
+                    {
+                        type: 'input',
+                        message: 'What is employees name?',
+                        name: 'emp-name',
+                    },
+                    {
+                        type: 'input',
+                        message: 'What is his/her employee ID?',
+                        name: 'emp-id',
+                    },
+                    {
+                        type: 'input',
+                        message: 'What is his/her email address?',
+                        name: 'emp-address',
+                    },
+                    {
+                        type: 'input',
+                        message: 'What school did he/she attend?',
+                        name: 'emp-school',
+                    },
+                ]);
+            };
+            empQuestions2();
+        } else {
+            (answers.employeeType === 'No one to add')
+            //exit function
+        }
+    });
 
+    
 };
 
-const dealEmp = (answers) => {
-if (answers.engineer === true) {
-    empQuestions();
-} if (answers.intern === true) {
-    empQuestions2();
-} else {
-    //end process??
-}
-};
-dealEmp();
+
 
 const writeFileSync = util.promisify(fs.writeFile);
 
@@ -56,60 +106,14 @@ const writeFileSync = util.promisify(fs.writeFile);
 //need help with switch statement or maybe if and then statement???
 //const answers = answers;
 
-const empQuestions = () => {
-    return inquirer.prompt([
-        {
-            type: 'input',
-            message: 'What is employees name?',
-            name: 'emp-name',
-        },
-        {
-            type: 'input',
-            message: 'What is his/her employee ID?',
-            name: 'emp-id',
-        },
-        {
-            type: 'input',
-            message: 'What is his/her email address?',
-            name: 'emp-address',
-        },
-        {
-            type: 'input',
-            message: "What is his/her GitHub username?",
-            name: 'emp-github',
-        },
-    ]);
-};
 
-const empQuestions2 = () => {
-    return inquirer.prompt([
-        {
-            type: 'input',
-            message: 'What is employees name?',
-            name: 'emp-name',
-        },
-        {
-            type: 'input',
-            message: 'What is his/her employee ID?',
-            name: 'emp-id',
-        },
-        {
-            type: 'input',
-            message: 'What is his/her email address?',
-            name: 'emp-address',
-        },
-        {
-            type: 'input',
-            message: 'What school did he/she attend?',
-            name: 'emp-school',
-        },
-    ]);
-};
+
+
 
 
 
 const generateHtml = (answers) =>
-`<!DOCTYPE html>
+    `<!DOCTYPE html>
 <html lang="en">
 
 <head>
