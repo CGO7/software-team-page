@@ -1,15 +1,23 @@
-  
 {
-    "name": "static-site",
-    "version": "1.0.0",
-    "description": "",
-    "main": "index.js",
-    "scripts": {
-      "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "author": "Chris Goslin",
-    "license": "ISC",
-    "dependencies": {
-      "inquirer": "^6.5.2"
-    }
-  }
+  "name": "static-site",
+  "version": "1.0.0",
+  "description": "A command line application to generate a html page with team members information.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Chris Goslin",
+  "license": "ISC",
+  "dependencies": {
+    "inquirer": "^6.5.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CGO7/software-team-page.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/CGO7/software-team-page/issues"
+  },
+  "homepage": "https://github.com/CGO7/software-team-page#readme"
+}

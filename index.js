@@ -36,7 +36,19 @@ const managerQuestions = () => {
         },
 
     ]);
+
 };
+
+const dealEmp = (answers) => {
+if (answers.engineer === true) {
+    empQuestions();
+} if (answers.intern === true) {
+    empQuestions2();
+} else {
+    //end process??
+}
+};
+dealEmp();
 
 const writeFileSync = util.promisify(fs.writeFile);
 
@@ -63,13 +75,33 @@ const empQuestions = () => {
         },
         {
             type: 'input',
-            message: 'What school did he/she attend?',
-            name: 'emp-school',
+            message: "What is his/her GitHub username?",
+            name: 'emp-github',
+        },
+    ]);
+};
+
+const empQuestions2 = () => {
+    return inquirer.prompt([
+        {
+            type: 'input',
+            message: 'What is employees name?',
+            name: 'emp-name',
         },
         {
             type: 'input',
-            message: "What is his/her GitHub username?",
-            name: 'emp-github',
+            message: 'What is his/her employee ID?',
+            name: 'emp-id',
+        },
+        {
+            type: 'input',
+            message: 'What is his/her email address?',
+            name: 'emp-address',
+        },
+        {
+            type: 'input',
+            message: 'What school did he/she attend?',
+            name: 'emp-school',
         },
     ]);
 };
@@ -84,7 +116,7 @@ const generateHtml = (answers) =>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Emp Info</title>
 </head>
 
 <body>
