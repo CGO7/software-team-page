@@ -26,7 +26,6 @@ Run npm init to download json package and run node new to run applicaition
 <br>
 
 ## Tests
-https://drive.google.com/file/d/1HmCxwkIy9SF9wmMDXguz-lqOcukuqL9l/view - automatic!
 [Test Video](https://drive.google.com/file/d/1HmCxwkIy9SF9wmMDXguz-lqOcukuqL9l/view)
  
 <br>
