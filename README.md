@@ -1,4 +1,4 @@
-# software-team-page
+# Software-Team-Page
 <br>
                                                                 
 - [Description](#Description)
@@ -31,9 +31,9 @@ Run npm init to download json package and run node new to run applicaition
 <br>
 
 ## Questions
-[cgo](http://github.com/cgo) 
+[CGO](http://github.com/cgo) 
 ### For questions about this project, please email:
- email.com
+ [Cgoslin7@gmail.com]
  <br>
 
 ### License
