@@ -7,6 +7,7 @@
 - [Contributing](#Contributing)
 - [Tests](#Tests)
 - [Questions](#Questions)
+- [Personal Note](#Personal-Note)
 <br>
 
 ## Description
@@ -36,5 +37,5 @@ Run npm init to download json package and run node new to run applicaition
  [Cgoslin7@gmail.com]
  <br>
 
-### License
- Eclipse Public 2.0
+### Personal Note
+ I was not aware that this project was to be done in this format becaue I did not read through the entire ReadMe.  I got tutoring on monday from bootcamp and figured out that I had a lot of work to do to re do all of my code.  I hired a friend of mine to tutor me today, and we spend 5 hours going over all of this.  I feel much better now, and this was a big learning experience for me.
